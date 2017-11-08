@@ -1,0 +1,9 @@
+version: '3'
+services:
+    database:
+        image: translators-db-server:base
+        container_name: Translators_DB_Instance
+        ports:
+            - "6603:3306"
+        environment:
+            MYSQL_ROOT_PASSWORD: tony911admin
